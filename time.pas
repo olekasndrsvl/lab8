@@ -1,8 +1,11 @@
 ﻿begin
-  var year:= readinteger('Enter year');
+  var year:= readinteger('Enter year:');
   
-  print('Leap year:', (year mod 4 =0) and not((year mod 100 = 0) and (year mod 400 <>0)));
-     
+  println('Leap year:', (year mod 4 =0) and not((year mod 100 = 0) and (year mod 400 <>0)));
+     if (year mod 4 =0) and not((year mod 100 = 0) and (year mod 400 <>0)) then
+       print('Days: 366')
+     else
+       print('Days: 365');
   
   
   
